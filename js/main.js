@@ -75,9 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form && status) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      var honeypot = form.querySelector("[name='website']");
+      if (honeypot && honeypot.value.trim() !== "") return;
       var data = new FormData(form);
       var lines = [];
       form.querySelectorAll("[name]").forEach(function (field) {
+        if (field.name === "website") return;
         var label = field.getAttribute("data-label") || field.name;
         lines.push(label + ": " + (data.get(field.name) || ""));
       });

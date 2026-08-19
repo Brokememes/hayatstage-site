@@ -75,7 +75,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="span-4 card">
         <h3>Send Us A Brief</h3>
         <p class="notice">This form opens a pre-filled email to hello@hayatstage.in via your email app. For guaranteed delivery on launch, connect a form service such as Web3Forms, Formspree, or a Cloudflare Pages Function.</p>
-        <form id="contact-form" novalidate>
+        <form id="contact-form">
+          <div style="position:absolute;left:-5000px;top:-5000px;" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-grid">
             <div>
               <label for="name">Full Name</label>
@@ -87,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div>
               <label for="phone">Phone / WhatsApp</label>
-              <input type="tel" id="phone" name="phone" data-label="Phone" required>
+              <input type="tel" id="phone" name="phone" data-label="Phone" pattern="[6-9][0-9]{9}" maxlength="10" title="Enter a valid 10-digit mobile number" required>
             </div>
             <div>
               <label for="email">Email</label>
@@ -95,7 +99,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div>
               <label for="city">City</label>
-              <select id="city" name="city" data-label="City">
+              <select id="city" name="city" data-label="City" required>
+                <option value="">Select City</option>
                 <option>Bangalore</option>
                 <option>Mumbai</option>
                 <option>Chennai</option>
@@ -106,12 +111,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div>
               <label for="service">Service Needed</label>
-              <select id="service" name="service" data-label="Service">
+              <select id="service" name="service" data-label="Service" required>
+                <option value="">Select Service</option>
                 <option>Exhibition Stall Design &amp; Fabrication</option>
                 <option>Corporate Event Management</option>
                 <option>Conference / Seminar Production</option>
                 <option>Product Launch Event</option>
                 <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" data-label="Budget" required>
+                <option value="">Select Budget Range</option>
+                <option>Under ₹1 Lakh</option>
+                <option>₹1 – 3 Lakh</option>
+                <option>₹3 – 7 Lakh</option>
+                <option>₹7 – 15 Lakh</option>
+                <option>₹15 Lakh+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div>
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline" data-label="Timeline" required>
+                <option value="">Select Timeline</option>
+                <option>This month</option>
+                <option>Next 1–2 months</option>
+                <option>3+ months away</option>
+                <option>Just researching</option>
               </select>
             </div>
             <div class="full">
