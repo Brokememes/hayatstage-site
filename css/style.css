@@ -543,6 +543,23 @@ section { padding-block: var(--space-xl); }
 }
 .hero.hero-photo::before, .hero.hero-photo::after { display: none; }
 
+.hero.hero-photo.hero-photo-exhibitions {
+  background-image:
+    linear-gradient(180deg, rgba(11,18,32,0.55) 0%, rgba(11,18,32,0.78) 60%, rgba(11,18,32,0.97) 100%),
+    url("../images/cpplus-02.jpg");
+}
+.hero.hero-photo.hero-photo-corporate {
+  background-image:
+    linear-gradient(180deg, rgba(11,18,32,0.55) 0%, rgba(11,18,32,0.78) 60%, rgba(11,18,32,0.97) 100%),
+    url("../images/cgi-01.jpg");
+}
+.hero.hero-photo.hero-photo-wedding {
+  background-image:
+    linear-gradient(180deg, rgba(11,18,32,0.55) 0%, rgba(11,18,32,0.78) 60%, rgba(11,18,32,0.97) 100%),
+    url("../images/wedding-hero.jpg");
+  background-position: center 38%;
+}
+
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed;
