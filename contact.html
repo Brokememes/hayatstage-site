@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Hayat Stage — Exhibition Stall Quote</title>
+<meta name="description" content="Get a free exhibition stall or event management quote from Hayat Stage. Serving Bangalore, Mumbai, Chennai, Delhi &amp; Gurgaon.">
+<link rel="canonical" href="https://hayatstage.in/contact.html">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .form-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); }
+  .form-grid .full { grid-column: 1 / -1; }
+  @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+  label { display: block; font-weight: 700; font-size: var(--step--1); margin-bottom: 0.4em; font-family: var(--font-display); }
+  input, select, textarea {
+    width: 100%; padding: 0.75em 0.9em; border: 1px solid var(--line);
+    font: inherit; background: #fff; color: var(--ink); border-radius: var(--radius);
+  }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  textarea { min-height: 120px; resize: vertical; }
+  #form-status { margin-top: 1rem; padding: 0.8em 1em; background: #eef7f0; border: 1px solid #bfe3c9; color: #1f5c37; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Hayat<span class="dot">&bull;</span>Stage<small>Exhibitions &amp; Events</small></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <div class="nav-item-dropdown">
+        <button class="nav-dropdown-trigger" aria-expanded="false">Services <span class="caret">&#9662;</span></button>
+        <div class="nav-dropdown-menu">
+        <a href="exhibition-stall-design.html">Exhibition Stalls</a>
+        <a href="corporate-event-management.html">Corporate Events</a>
+        <a href="wedding-event-management.html">Weddings</a>
+        </div>
+      </div>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="industries.html">Industries</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="tel:+918050069094" class="btn btn-ghost">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <p class="eyebrow">Get In Touch</p>
+      <h1>Let's Build Your Stall.</h1>
+      <p class="lede">Share your hall size, dates and brief — or just call us directly.</p>
+    </div>
+  </section>
+  <div class="stage-strip" aria-hidden="true"></div>
+
+  <section>
+    <div class="container bento">
+      <div class="span-4 card">
+        <h3>Send Us A Brief</h3>
+        <p class="notice">This form opens a pre-filled email to hello@hayatstage.in via your email app. For guaranteed delivery on launch, connect a form service such as Web3Forms, Formspree, or a Cloudflare Pages Function.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" data-label="Name" required>
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" data-label="Company">
+            </div>
+            <div>
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" data-label="Phone" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" data-label="Email" required>
+            </div>
+            <div>
+              <label for="city">City</label>
+              <select id="city" name="city" data-label="City">
+                <option>Bangalore</option>
+                <option>Mumbai</option>
+                <option>Chennai</option>
+                <option>Delhi</option>
+                <option>Gurgaon</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="service">Service Needed</label>
+              <select id="service" name="service" data-label="Service">
+                <option>Exhibition Stall Design &amp; Fabrication</option>
+                <option>Corporate Event Management</option>
+                <option>Conference / Seminar Production</option>
+                <option>Product Launch Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="details">Hall Size, Dates &amp; Brief</label>
+              <textarea id="details" name="details" data-label="Details" placeholder="e.g. 6x6m stall at BIEC Bangalore, 12-15 Sept, need a modern double-decker design."></textarea>
+            </div>
+          </div>
+          <p><button type="submit" class="btn btn-primary" style="margin-top:1rem;">Send Enquiry</button></p>
+          <p id="form-status" hidden>Thanks — your email app should now be open with your enquiry ready to send. Prefer to talk directly? Call us instead.</p>
+        </form>
+      </div>
+
+      <div class="span-2 card card-dark">
+        <h3>Direct Contact</h3>
+        <p><strong>Phone / WhatsApp</strong><br><a href="tel:+918050069094">+91 80500 69094</a></p>
+        <p><strong>Email</strong><br><a href="mailto:hello@hayatstage.in">hello@hayatstage.in</a></p>
+        <p><strong>Head Office</strong><br>Hayat Stage HQ — #47/3, Byappanahalli Main Road, Srinivas Nagar, Near E-com Express, Sthanur, Bengaluru – 562149</p>
+        <p><strong>Hours</strong><br>Mon&ndash;Sat, 10:00&ndash;19:00 IST</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">On-Ground In</p>
+        <h2>All five cities, one point of contact.</h2>
+      </div>
+      <div class="city-grid">
+        <a class="city-chip" href="exhibition-stalls-bangalore.html">Bangalore <span class="arrow">&rarr;</span></a>
+        <a class="city-chip" href="exhibition-stalls-mumbai.html">Mumbai <span class="arrow">&rarr;</span></a>
+        <a class="city-chip" href="exhibition-stalls-chennai.html">Chennai <span class="arrow">&rarr;</span></a>
+        <a class="city-chip" href="exhibition-stalls-delhi.html">Delhi <span class="arrow">&rarr;</span></a>
+        <a class="city-chip" href="exhibition-stalls-gurgaon.html">Gurgaon <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Hayat Stage</h4>
+        <p>Exhibition stall design &amp; fabrication, plus full-service event management across India.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cities We Serve</h4>
+        <ul>
+          <li><a href="exhibition-stalls-bangalore.html">Bangalore</a></li>
+          <li><a href="exhibition-stalls-mumbai.html">Mumbai</a></li>
+          <li><a href="exhibition-stalls-chennai.html">Chennai</a></li>
+          <li><a href="exhibition-stalls-delhi.html">Delhi</a></li>
+          <li><a href="exhibition-stalls-gurgaon.html">Gurgaon</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="tel:+918050069094">+91 80500 69094</a></li>
+          <li><a href="mailto:hello@hayatstage.in">hello@hayatstage.in</a></li>
+          <li>Hayat Stage HQ — #47/3, Byappanahalli Main Road, Srinivas Nagar, Near E-com Express, Sthanur, Bengaluru – 562149</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Hayat Stage. All rights reserved.</span>
+      <span>Exhibition Stall Designers &amp; Event Managers — Bangalore &middot; Mumbai &middot; Chennai &middot; Delhi &middot; Gurgaon</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
